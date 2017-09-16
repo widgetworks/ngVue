@@ -14,7 +14,7 @@
     "ngvue"
   ],
   "scripts": {
-    "test": "BABEL_ENV=test jest",
+    "test": "sh ./scripts/test.sh",
     "example": "BABEL_ENV=dev webpack-dev-server --inline --hot --config ./example/webpack.config.js --content-base ./example",
     "clean": "rm -rf build",
     "bundle": "sh ./scripts/bundle.sh",
