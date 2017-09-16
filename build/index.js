@@ -104,7 +104,7 @@
             el: jqElement[0],
             data: reactiveData,
             render: function(h) {
-                return h(Component, index([ {
+                return h(Component, babelHelperVueJsxMergeProps([ {
                     directives: directives
                 }, {
                     props: reactiveData._v
@@ -117,7 +117,7 @@
     }
     var angular__default = "default" in angular ? angular.default : angular;
     Vue = "default" in Vue ? Vue.default : Vue;
-    var nestRE = /^(attrs|props|on|nativeOn|class|style|hook)$/, index = function(objs) {
+    var nestRE = /^(attrs|props|on|nativeOn|class|style|hook)$/, babelHelperVueJsxMergeProps = function(objs) {
         return objs.reduce(function(a, b) {
             var aa, bb, key, nestedKey, temp;
             for (key in b) if (aa = a[key], bb = b[key], aa && nestRE.test(key)) if ("class" === key && ("string" == typeof aa && (temp = aa, 
