@@ -17,7 +17,7 @@
     "test": "BABEL_ENV=test jest",
     "example": "BABEL_ENV=dev webpack-dev-server --inline --hot --config ./example/webpack.config.js --content-base ./example",
     "clean": "rm -rf build",
-    "bundle": "./scripts/bundle.sh",
+    "bundle": "sh ./scripts/bundle.sh",
     "lint": "eslint src lib test example",
     "build": "npm run lint && npm run clean && npm run bundle",
     "preversion": "npm run test",
